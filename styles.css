@@ -1,0 +1,373 @@
+:root {
+    --primary-font-color: white;
+    --secondary-font-color: #fff200;
+    --background-color: rgb(124, 16, 29);
+    --dark-color: black;
+}
+
+/* This text is in Impact */
+.text-in-impact {
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal,
+        Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+
+.rules-button-with-text {
+    /* width: 100vw; */
+    position: absolute;
+    left: 70%;
+    top: 2%;
+
+}
+
+.diagram-images {
+    width: 200px;
+}
+
+.rules-styles {
+    background-color: var(--primary-font-color);
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    transition: all ease-in-out;
+}
+
+
+.logo-bazinga-games-text p,
+.logo-bazinga-games-player p {
+    color: var(--primary-font-color);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    transform: scale(1.05);
+    text-align: center;
+    letter-spacing: 1px;
+    transition: transform 0.9s ease;
+}
+
+.logo-bazinga-games-text img {
+    transform: scale(0.9);
+    align-items: center;
+    transition: transform 0.9s ease;
+}
+
+.logo-bazinga-games-text {
+    transition: transform 0.9s ease;
+}
+
+.player-container,
+.player-container-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player-select {
+    filter: grayscale(100%) brightness(10000%) contrast(100%);
+    transition: transform 0.9s ease;
+    max-width: 190px;
+}
+
+figcaption {
+    opacity: 0;
+}
+
+figure {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-font-color);
+    font-size: 2rem;
+    transition: transform 0.9s ease;
+}
+
+.player-select:hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: transform 0.9s ease;
+}
+
+.player-select:hover+figcaption {
+    opacity: 1;
+    color: var(--secondary-font-color);
+    transition: opacity 1.2s ease;
+}
+
+.gameboard-play {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    transform: scale(0.9);
+    transition: transform 0.9s ease;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: start;
+}
+
+.weapon-player,
+.weapon-sheldon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-font-color);
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images-player-weapon {
+    width: 70px;
+}
+
+
+
+.player-selected,
+.player-sheldon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-selected p,
+.player-sheldon p {
+    font-size: 2rem;
+    color: var(--secondary-font-color);
+    margin: 0;
+}
+
+.player-or-machine {
+    width: 200px;
+}
+
+.text-para-result,
+.text-title-result {
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+        2px 2px 0 black;
+    transform: skew(-10deg, 0deg);
+    transform: rotate(-5deg);
+    /* Corrected typo in rotation value */
+}
+
+
+
+.text-title-result {
+    font-size: 4rem;
+    color: var(--secondary-font-color);
+    margin: 0;
+    transition: transform 0.9s ease;
+}
+
+.text-para-result {
+    font-size: 2rem;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.choose-text {
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.score-text {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.all-weapons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.weapon-to-choose {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-font-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.9s ease;
+}
+
+.weapon-to-choose:hover {
+    background-color: var(--secondary-font-color);
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+}
+
+.weapon-to-choose img {
+    width: 50px;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--dark-color);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: gray;
+    color: var(--dark-color);
+}
+
+.gameboard-roll {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* .choose-text-and-weapons {} */
+
+.result-board-final {
+    background-color: rgb(38, 38, 38);
+    width: 800px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.text-title-result-final {
+    color: var(--secondary-font-color);
+    font-size: 70px;
+
+}
+
+.score-text-final {
+    color: white;
+}
+
+
+.form-collect-name {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    input {
+        padding: 10px;
+        width: 200px;
+    }
+}
+
+
+
+/* .rules-drop-text {
+    align-self: flex-end;
+    transform: translate(-1000%, 300%);
+} */
+
+
+@media screen and (max-width: 724px) {
+
+    .player-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+
+    .rules-button-with-text {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        padding-bottom: 30px;
+    }
+
+
+    .gameboard-play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scale: .7;
+        position: absolute;
+        top: 250px;
+    }
+
+    .player-selected,
+    .player-sheldon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        scale: .8;
+    }
+
+    .weapon-player,
+    .weapon-sheldon {
+        margin-left: 30px;
+    }
+
+    .player-select {
+        order: 0;
+
+    }
+
+    .player-sheldon {
+        order: 0;
+    }
+
+    .gameboard-roll {
+        order: -1;
+    }
+
+
+    .result-board-final {
+        background-color: rgb(38, 38, 38);
+        width: 330px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+
+.oppacity {
+    opacity: 0;
+
+}

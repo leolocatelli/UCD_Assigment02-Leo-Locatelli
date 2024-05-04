@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazinga Games</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="rules-button-with-text"> <button class="rules-button" id="rules"> Rules </button>
+        <div class="rules-styles hidden">
+            <!-- <p>
+                Rock crushes Scissors (Rock defeats Scissors) <br>
+                Scissors cuts Paper (Scissors defeat Paper)<br>
+                Paper covers Rock (Paper defeats Rock)<br>
+                Rock crushes Lizard (Rock defeats Lizard)<br>
+                Lizard poisons Spock (Lizard defeats Spock)<br>
+                Spock smashes Scissors (Spock defeats Scissors)<br>
+                Scissors decapitates Lizard (Scissors defeat Lizard)<br>
+                Lizard eats Paper (Lizard defeats Paper)<br>
+                Paper disproves Spock (Paper defeats Spock)<br>
+                Spock vaporizes Rock (Spock defeats Rock)<br>
+            </p> -->
+            <img class="diagram-images" src="./images/RPSLS.webp">
+        </div>
+    </div>
+    <div class="logo-bazinga-games-text ">
+        <img src="images/bazinga-games-logo.svg">
+        <p>Plays against Sheldon</p>
+        <br>
+        <br>
+    </div>
+
+    <div class="logo-bazinga-games-player">
+
+        <div class="form-collect-name">
+            <form>
+                <p> 1. Add your Name:</p> <br>
+                <input type="text" name="insert_name" id="player-name-input">
+            </form> <br>
+            <button class="new-game-button"> Send</button>
+        </div>
+
+        <div class="player-to-select hidden">
+            <p>2. Choose Player</p>
+            <div class="player-container">
+
+                <figure>
+                    <img class="player-select" id="0" src="./images/Howard.png">
+                    <figcaption> Howard </figcaption>
+                </figure>
+                <figure>
+                    <img class="player-select" id="1" src="./images/Leonard.png">
+                    <figcaption> Leonard </figcaption>
+                </figure>
+                <figure>
+                    <img class="player-select" id="2" src="./images/Raj.png">
+                    <figcaption> Raj </figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="gameboard-play hidden">
+
+        <div class="player-selected">
+            <img class="player-or-machine" src="">
+            <p class="player-name"></p>
+            <div class="weapon-player"> <img class="images-player-weapon" src="" alt=""> </div>
+        </div>
+
+        <div class="gameboard-roll">
+            <div class="result-container">
+                <h1 class="text-title-result oppacity"> YOU WIN</h1>
+                <p class="text-para-result oppacity"> Lizard eats Paper </p>
+            </div>
+            <div class="choose-text-and-weapons">
+                <p class="choose-text"> Choose:</p>
+                <div class="all-weapons">
+                    <div class="weapon-to-choose rock-choice"> <img src="./images/rock.png" alt="rock"></div>
+                    <div class="weapon-to-choose paper-choice"> <img src="./images/paper.png" alt="paper"></div>
+                    <div class="weapon-to-choose scissors-choice"> <img src="./images/scissors.png" alt="scissors">
+                    </div>
+                    <div class="weapon-to-choose lizard"> <img src="./images/lizard.png" alt="lizard"></div>
+                    <div class="weapon-to-choose spock-choice"> <img src="./images/spock.png" alt="spock"></div>
+                </div>
+                <button class="new-game-button" id="new-game-id1"> New Game </button>
+            </div>
+            <p class="choose-text score-text"></p>
+
+
+        </div>
+
+        <div class="player-sheldon">
+            <img class="player-or-machine" src="./images/Sheldon.png">
+            <p> Sheldon</p>
+            <div class="weapon-sheldon"> <img class="images-player-weapon" src=""> </div>
+        </div>
+
+
+    </div>
+
+    <div class="result-board-final hidden">
+        <h1 class="text-title-result-final"> </h1>
+        <p class="choose-text score-text-final"> </p>
+        <button class="new-game-button" id="new-game-id2"> New Game </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
